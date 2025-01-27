@@ -33,7 +33,7 @@
 .print "Movies"
 .print "======"
 .print ""
-SELECT movies.movie_title, movies.year_released, studios.studio_name
+SELECT movies.movie_title, movies.year_released, movies.mpaa_rating, studios.studio_name
 FROM studios
 INNER JOIN movies ON movies.studio_id = studios.id;
 
