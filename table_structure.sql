@@ -13,13 +13,12 @@ CREATE TABLE movies (
     movie_title TEXT,
     year_released INTEGER,
     mpaa_rating TEXT,
-    studio_id TEXT
+    studio_id INTEGER
 );
 
 CREATE TABLE actors (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    first_name TEXT,
-    last_name TEXT
+    name TEXT
 );
 
 CREATE TABLE roles (
@@ -28,6 +27,3 @@ CREATE TABLE roles (
     movie_id INTEGER,
     actor_id INTEGER
 );
-
-.mode column
-.headers off
